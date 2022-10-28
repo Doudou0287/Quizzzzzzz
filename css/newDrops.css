@@ -1,0 +1,59 @@
+.drop{
+    background: rgba(255, 255, 255, .3);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 10px;
+    border-left: 1px solid rgba(255, 255, 255, .3);
+    border-top: 1px solid rgba(255, 255, 255, .3);
+    box-shadow: 10px 10px 60px -8px rgba(0,0,0,0.2);
+    position: absolute;
+    transition: all 0.2s ease; 
+}
+
+.drop-1 {
+    height: 80px; width: 80px;
+    top: -20px; left: -40px;
+    z-index: -1;
+}
+
+.drop-2 {
+    height: 80px; width: 80px;
+    bottom: -30px; right: -10px;
+}
+
+.drop-3 {
+    height: 100px; width: 100px;
+    bottom: 120px; right: -50px;
+    z-index: -1;
+}
+
+.drop-4 {
+    /* height: 120px; */
+     width: 120px;
+    top: 30px; 
+    right: -80px;
+    text-align: center;
+    padding: 50px 0;
+}
+
+.drop-5 {
+    height: 160px; width: 160px;
+    bottom: -50px; 
+    left: -37px;
+    z-index: -1;
+}
+
+@media only screen and (max-width: 1180px) {
+    .drop-4 {
+        /* width: 100px; */
+        top: 0px;
+        right: -19px;
+    }
+}
+@media only screen and (max-width: 600px) {
+    .drop-4 {
+        width: 100px;
+        top: 0px;
+        right: -19px;
+    }
+}

@@ -1,0 +1,141 @@
+*{
+    margin: 0;
+    padding: 0;
+    outline: none;
+}
+
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+    position: relative;
+}
+form{
+    background: rgba(255, 255, 255, 0.65);
+    padding: 3rem;
+    border-radius: 20px;
+    border-left: 1px solid rgba(255, 255, 255, .3);
+    border-top: 1px solid rgba(255, 255, 255, .3);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    -moz-backdrop-filter: blur(10px);
+    box-shadow: 20px 20px 40px -6px rgba(0, 0, 0, .2);
+}
+
+p{
+    color: rgb(23, 36, 32);
+    font-weight: 500;
+    opacity: .7;
+    font-size: 1.7rem;
+    margin-bottom: 40px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.198);
+
+}
+   
+p span{
+    display: block;
+}
+p span:nth-child(2){
+    font-weight: normal;
+    font-size: 14px;
+    color: rgb(36, 37, 37);
+}
+
+a{
+    color: rgb(47, 71, 58);
+    text-decoration: none;
+    font-size: 12px;
+    transition: all .3s;
+}
+
+a:active {
+    text-shadow: none;
+}
+input{
+    background: transparent;
+    border: none;
+    border-left: 1px solid rgba(255, 255, 255, 0.312);
+    border-top: 1px solid rgba(255, 255, 255, 0.316);
+    padding: 1rem;
+    width: 200px;
+    border-radius: 50px;
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    -moz-backdrop-filter: blur(5px);
+    box-shadow: 4px 4px 60px rgba(0, 0, 0, 0.211);
+    color: rgb(67, 95, 79);
+    font-weight: 500;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.214);
+    transition: all .3s;
+    margin-bottom:  1.6rem;
+}
+
+::placeholder{
+    color: rgb(47, 71, 58);
+}
+
+input:hover,input[type="email"]:focus,input[type="password"]:focus{
+    background: rgba(0, 0, 0, 0.152);
+    /* box-shadow: 4px 4px 60px 8px rgba(0, 0, 0, 0.297); */
+}
+
+input[type="button"]{
+    cursor: pointer;
+    margin-top: 10px;
+    font-size: 1rem;
+    width: 150px;
+}
+
+.drop{
+    background: rgba(255, 255, 255, .3);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 10px;
+    border-left: 1px solid rgba(255, 255, 255, .3);
+    border-top: 1px solid rgba(255, 255, 255, .3);
+    box-shadow: 10px 10px 60px -8px rgba(0,0,0,0.2);
+    position: absolute;
+    transition: all 0.2s ease; 
+}
+
+.drop-1 {
+    height: 80px; width: 80px;
+    top: -20px; left: -40px;
+    z-index: -1;
+}
+
+.drop-2 {
+    height: 80px; width: 80px;
+    bottom: -30px; right: -10px;
+}
+
+.drop-3 {
+    height: 100px; width: 100px;
+    bottom: 120px; right: -50px;
+    z-index: -1;
+}
+
+.drop-4 {
+    /* height: 120px; */
+     width: 120px;
+    top: -30px; right: -80px;
+    text-align: center;
+    padding: 50px 0;
+}
+
+.drop-5 {
+    height: 60px; width: 60px;
+    bottom: 170px; left: 90px;
+    z-index: -1;
+}
+
+#erreur1, .error {
+    width: 92%;
+    margin: 0px auto;
+    font-size: 15px;
+    color: #ff0400;
+}
